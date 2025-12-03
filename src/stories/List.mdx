@@ -1,0 +1,45 @@
+import { Meta, Primary, Controls, Story } from '@storybook/addon-docs/blocks';
+
+import * as ListStories from './List.stories.jsx';
+
+import List from "../components/List";
+
+
+<Meta of={ListStories} />
+
+# Tarjeta interpretes
+
+## Descripción general
+
+El componente **`<List />`** representa una tarjeta de intérprete con foto, nombre y descripción.  
+Puede marcarse como destacado mediante la propiedad `esNota10`, lo que cambia su estilo visual.
+
+<Primary />
+
+---
+
+## Tabla de propiedades
+
+<Controls />
+
+---
+
+## Ejemplos
+
+### Estandar
+
+<Story of={ListStories.Estandar} />
+
+### Destacado
+
+<Story of={ListStories.Destacado} />
+
+---
+
+## Accesibilidad
+
+El componente `List` está diseñado con enfoque en la accesibilidad:
+
+- **`tabIndex="0"`:** Permite que la tarjeta sea enfocada y navegable. 
+- **`aria-label`:** Proporciona un resumen verbalizado claro. 
+- **`sr-only`**: Se utiliza para ocultar la biografía visualmente.
