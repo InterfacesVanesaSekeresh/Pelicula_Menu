@@ -19,6 +19,12 @@
  * >
  *   Award-winning actor known for dramatic roles.
  * </List>
+ * 
+*
+ * Accesibilidad:
+ * - `tabIndex="0"`: Permite que la tarjeta sea enfocada y navegable.
+ * - `aria-label`: Proporciona un resumen verbalizado claro.
+ * - `sr-only`: Oculta la biografía visualmente, pero la mantiene disponible para lectores de pantalla.
  */
 function List(props) {
     const { foto, nombre, esNota10 } = props;
