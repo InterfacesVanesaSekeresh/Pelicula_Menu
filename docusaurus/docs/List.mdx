@@ -1,0 +1,45 @@
+---
+id: List
+title: Tarjeta de Intérpretes
+---
+
+import List from '../components/List.jsx';
+
+# Tarjeta intérpretes
+
+## Descripción general
+
+El componente **`List`** representa una tarjeta de intérprete con foto, nombre y descripción.  
+Puede marcarse como destacado mediante la propiedad `esNota10`, lo que cambia su estilo visual.
+
+---
+
+## Ejemplos
+
+### Intérprete Estándar
+<List
+  nombre="Leonardo Sbaraglia"
+  esNota10={false}
+  foto="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Leonardo_Sbaraglia_en_la_presentaci%C3%B3n_de_la_segunda_temporada_de_%E2%80%9C99%2C99%25._La_ciencia_de_las_Abuelas%E2%80%9D_%2816670703837%29_%28cropped%29.jpg/330px-Leonardo_Sbaraglia_en_la_presentaci%C3%B3n_de_la_segunda_temporada_de_%E2%80%9C99%2C99%25._La_ciencia_de_las_Abuelas%E2%80%9D_%2816670703837%29_%28cropped%29.jpg"
+>
+  Leonardo Sbaraglia es un actor argentino que protagoniza *Concursante* como Martín Circo Martín.
+</List>
+
+### Intérprete Destacado
+<List
+  nombre="Tom Hanks"
+  esNota10={true}
+  foto="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/TomHanksPrincEdw031223_%2811_of_41%29_%28cropped%29.jpg/330px-TomHanksPrincEdw031223_%2811_of_41%29_%28cropped%29.jpg"
+>
+  Tom Hanks es un actor estadounidense ganador del Óscar por interpretar a *Forrest Gump*.
+</List>
+
+---
+
+## Accesibilidad
+
+El componente `List` está diseñado con enfoque en la accesibilidad:
+
+- **`tabIndex="0"`:** Permite que la tarjeta sea enfocada y navegable.  
+- **`aria-label`:** Proporciona un resumen verbalizado claro.  
+- **`sr-only`**: Se utiliza para ocultar la biografía visualmente.
